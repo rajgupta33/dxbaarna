@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarna's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+  <a href="#home" class="logo">Portfolio</a>
+  <i class='bx bx-menu' id="menu-icon"></i> <!-- Menu icon -->
+  <nav class="navbar">
+    <a href="#home" class='active'>Home</a>
+    <a href="#portfolio">Projects</a>
+    <a href="#port">Portfolio</a>
+    <a href="#article">Achievements</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </nav>
+<script>
+
+    // JavaScript for toggling the navbar on mobile
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+</script>  
+
+</header>
+
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to Aarna’s world</h1>
+            <br>
+            <h4>Renowned Dubai-based international model , actor, influencer, accomplished dancer, author, and RJ. </h4>
+            <br>
+            <h3>Recognized as the "Expo Girl" for her appearances in UAE’s prestigious National Day celebrations</h3>
+            <br>
+            <h3>She is known for her dynamic presence across various fields. </h3>
+            <h3>Featured on Emaar Entertainment billboards, Aarna has been spotted alongside numerous celebrities, adding to her impressive portfolio. Alongside her thriving career, she shines as a bright student, achieving excellence both in academics and in the limelight.</h3>
+        </div>
+        <div class="home-img">
+            <img src="Images/main.jpg" alt="" class="images/home">
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <!-- Your project iframes go here -->
+            <!-- Example: -->
+             <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/C-xqNY5SS2s" ><img  src="Images\P1.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/C-kWAtAJQ_e"><img src="Images/P2.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/C-DZf3nptCj"><img src="Images/P3.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/C5YTpBGpqzN"><img src="Images/P4.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/C44wGg-LWsi"><img src="Images/P5.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/C4U_dZwrAPP"><img src="Images/P6.png" alt=""></a>
+            </div>
+            <div class="hidden-project">
+                <a href="https://www.instagram.com/p/C4M92l8oArx"><img src="Images/P7.png" alt=""></a>
+            </div>
+            <div class="hidden-project">
+                <a href="https://www.instagram.com/reel/C348sPnpCEt"><img src="Images/P8.png" alt=""></a>
+            </div>
+            <div class="hidden-project">
+                <a href="https://www.instagram.com/reel/C0GqqKZoTy6"><img src="Images/P9.png" alt=""></a>
+            </div>
+            <div class="hidden-project">
+                <a href="https://www.instagram.com/reel/CwhD88ap2eK"><img src="Images/P10.png" alt=""></a>
+            </div>
+            <div class="hidden-project">
+                <a href="https://www.instagram.com/reel/CujWHfvLC3J"><img src="Images/P11.png" alt=""></a>
+            </div>
+            <div class="hidden-project">
+                <a href="https://www.instagram.com/reel/CvHrJvIJaRZ"><img src="Images/P12.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CuujbryJuwP"><img src="Images/P13.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CtVw-kTpGNh"><img src="Images/P14.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CsqS9FVJtl4"><img src="Images/P15.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CrSTnOkPX6G"><img src="Images/P16.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CrLARnHJqno"><img src="Images/P17.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CrD0YK5Jjfi"><img src="Images/P18.png" alt=""></a>
+            </div>
+            <div class="hidden-project" id="y">
+                <a href="https://www.instagram.com/reel/CqQUVfeJozE"><img src="Images/P19.png" alt=""></a>
+            </div>
+            
+            
+           
+            <!-- Repeat for other projects -->
+            
+        </div>
+        <div id="seeMoreButton" onclick="toggleProjects()">See More</div>
+        <div class="hidden-project" id="y">
+            <img src="project3.png" alt="">
+        </div>
+        <script>
+            function toggleProjects() {
+                var x=document.getElementsByClassName('hidden-project');
+               
+                for (var i = 0; i < x.length; i++) {
+            x[i].classList.toggle('portfolio-box');
+        }
+        
+                var seeMoreButton = document.getElementById('seeMoreButton');
+                seeMoreButton.innerText = seeMoreButton.innerText === 'See More' ? 'See Less' : 'See More';
+            }
+        </script>
+    </section>
+
+    <section id="port">
+        <h2 class="heading"><span>Portfolio</span></h2>
+        <div class="portfolio-container">
+            <!-- Your portfolio images go here -->
+            <!-- Example: -->
+            <div class="portfolio-box">
+                <a href="https://mixfame.com/talent/23315/"><img src="./Images/1.jpg" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://mixfame.com/talent/23315/"><img src="./Images/2.jpg" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://mixfame.com/talent/23315/"><img src="./Images/3.jpg" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://mixfame.com/talent/23315/"><img src="./Images/4.jpg" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://mixfame.com/talent/23315/"><img src="./Images/5.jpg" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://mixfame.com/talent/23315/"><img src="./Images/6.jpg" alt=""></a>
+            </div>
+            <!-- Repeat for other portfolio items -->
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">With <span>Celebrities</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/CF7EnIMBO0A/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C1.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/CIQt_2gJfxz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C2.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/CQIjXEvJuhR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C3.png" alt=""></a>
+            </div>
+            <div class="portfolio-box">
+                <a href="https://www.instagram.com/p/CWIan45p-BP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C4.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CWSbMkZJYV7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C5.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CXc-5uWJcki/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C6.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CYvwZ7Zp8T1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C7.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CY1DnADpAGB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C8.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CaKuthGBAYJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C9.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CaUpCIRp0-_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C10.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/CbNeIY5JY1w/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C11.png" alt=""></a>
+            </div>
+            <div class="hidden-project1">
+                <a href="https://www.instagram.com/reel/Cgv9We2JbTZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="Images/C12.png" alt=""></a>
+            </div>
+            
+        </div>
+        
+        <div id="seeMoreButton1" onclick="toggleProjects1()">See More</div>
+        <div class="hidden-project" id="y">
+            <img src="project3.png" alt="">
+        </div>
+        <script>
+            function toggleProjects1() {
+                var x=document.getElementsByClassName('hidden-project1');
+               
+                for (var i = 0; i < x.length; i++) {
+            x[i].classList.toggle('portfolio-box');
+        }
+        
+                var seeMoreButton = document.getElementById('seeMoreButton1');
+                seeMoreButton.innerText = seeMoreButton.innerText === 'See More' ? 'See Less' : 'See More';
+            }
+        </script>
+    </section>
+
+    <section class="portfolio" id="article">
+        <h2 class="heading"><span>Achievements</span> </h2>
+        <div id="links" style="display:flex; flex-direction:row; gap:20px" >
+            <div class="card">
+                <iframe class="card-iframe" src="https://www.instagram.com/reel/CW-1fjupaIn/embed" title="Example Iframe"></iframe>
+                <p class="card-title">Featured in Dubai Expo 2020</p>
+            </div>
+            <div class="card">
+                <iframe class="card-iframe" src="https://www.instagram.com/reel/Ckc7YhTpcxl/embed" title="Example Iframe"></iframe>
+                <p class="card-title">Featured in Dubai Expo 2020</p>
+            </div>
+            <div class="card">
+                <iframe class="card-iframe" src="https://www.instagram.com/reel/Crae30IpSgU/embed" title="Example Iframe"></iframe>
+                <p class="card-title">In popular News Articles</p>
+            </div>
+            <div class="card">
+                <iframe class="card-iframe" src="https://www.instagram.com/reel/CubuQ0MpHV1/embed" title="Example Iframe"></iframe>
+                <p class="card-title">Authored Book - The Mesmerizing Dream</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="new-section" id="articles" style="padding: 2rem 0; text-align: center;">
+        <h2 style="font-size: x-large; margin-bottom: 20px;">Articles <span>Published</span></h2>
+        <div class="articles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; justify-content: center; padding: 1rem;">
+            
+            <a href="https://xpresstimes.in/dubais-youngest-rising-star-aarna-chaudharys-ascent-to-stardom/" 
+               style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; text-decoration: none;">
+                <img src="Images/example1.jpg" alt="Xpress Times" style="width: 240px; height: 240px; object-fit: cover;">
+                <div style="padding: 16px; font-family: Arial, sans-serif;">
+                    <p style="font-size: 1.5em; font-weight: bold; color: #333;">Xpress Times</p>
+                </div>
+            </a>
+    
+            <a href="https://webstoriesindia.com/dubais-youngest-rising-star-aarna-chaudharys-ascent-to-stardom/" 
+               style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; text-decoration: none;">
+                <img src="Images/example3.jpg" alt="Web Stories India" style="width: 240px; height: 240px; object-fit: cover;">
+                <div style="padding: 16px; font-family: Arial, sans-serif;">
+                    <p style="font-size: 1.5em; font-weight: bold; color: #333;">Web Stories India</p>
+                </div>
+            </a>
+    
+            <a href="https://thefilmybeat.com/dubais-youngest-rising-star-aarna-chaudharys-ascent-to-stardom/" 
+               style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; text-decoration: none;">
+                <img src="Images/example5.jpg" alt="The Filmy Beat" style="width: 240px; height: 240px; object-fit: cover;">
+                <div style="padding: 16px; font-family: Arial, sans-serif;">
+                    <p style="font-size: 1.5em; font-weight: bold; color: #333;">The Filmy Beat</p>
+                </div>
+            </a>
+    
+            <a href="https://bestofhindustan.com/dubais-youngest-rising-star-aarna-chaudharys-ascent-to-stardom/" 
+               style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; text-decoration: none;">
+                <img src="Images/example7.jpg" alt="Best of Hindustan" style="width: 240px; height: 240px; object-fit: cover;">
+                <div style="padding: 16px; font-family: Arial, sans-serif;">
+                    <p style="font-size: 1.5em; font-weight: bold; color: #333;">Best of Hindustan</p>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Wanna <span>Collab</span></h2>
+        <div class="xy">
+            <div class="contact-media">
+                <a href="https://www.instagram.com/dxbaarna/"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <div class="contact-media">
+                <a href="mailto:livelife1212007@yahoo.com"><i class='bx bx-envelope'></i></a>
+            </div>
+            <div class="contact-media">
+                <a href="https://wa.me/+971554690531"><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+            <div class="contact-media">
+                <a href="https://wa.me/971505056364"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+  
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</body>
+</html>
